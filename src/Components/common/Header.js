@@ -24,7 +24,7 @@ const Header = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Coin App
+            Crypto App
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
