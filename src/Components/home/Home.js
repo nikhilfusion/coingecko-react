@@ -1,3 +1,4 @@
+// Home component is the landing page
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import {
@@ -36,17 +37,17 @@ export default function Home() {
 
   useEffect(() => {
     getMarketRate(pageNumber);
+    //disabled exhaustive-deps for unwanted reloads for pagenumber
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   function getFetchURL(pageNum) {
     return `${BASE_URL}/coins/markets?vs_currency=eur&per_page=${perPage}&page=${pageNum}`;
   }
-
+  // calling marketrate api and storing in marketData
   async function getMarketRate(pageNum) {
     try {
       const result = await axios.get(getFetchURL(pageNum))
-      console.log("result is ", result);
       const processedData = [...marketData, ...result?.data];
       setPageNumber(pageNum);
       setMarketData(processedData);
@@ -62,7 +63,7 @@ export default function Home() {
       next={() => getMarketRate(pageNumber + 1)}
       hasMore={true}
       dataLength={marketData.length}
-      loader={<img src={Loading} alt="loading" />}
+      loader={<img src={Loading} alt="loading" data-testid="loader" />}
     >
       <Container className={classes.cardMain} maxWidth="lg">
         <Grid container spacing={4}>

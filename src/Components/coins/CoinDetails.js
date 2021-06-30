@@ -41,8 +41,9 @@ export default function CoinDetails() {
   const [coinData, setCoinData] = useState({})
   useEffect(() => {
     getCoinDetails()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
+  // fetching coin details api
   async function getCoinDetails() {
     try {
       const result = await axios.get(`${BASE_URL}/coins/${coinId}`)

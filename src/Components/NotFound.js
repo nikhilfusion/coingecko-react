@@ -1,3 +1,4 @@
+// This page for unreached routes
 import React from 'react';
 import {
   Box,
@@ -32,6 +33,7 @@ function NotFound() {
   const classes = useStyles();
   const theme = useTheme();
   const history = useHistory();
+  //hooks function to check the devices is mobile
   const mobileDevice = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
@@ -70,7 +72,7 @@ function NotFound() {
       >
         <Button
           color="secondary"
-          onClick={() => history.push('/')}
+          onClick={() => history.push('/home')}
           variant="outlined"
         >
           Back to home

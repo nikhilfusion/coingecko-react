@@ -9,8 +9,6 @@ import {
 } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import { capitalizeName } from '../../utils/common';
-// import { capitalizeName } from '../../utils/common';
-// import Activity from '../common/Activity';
 
 const useStyles = makeStyles((theme) => ({
   card: {
