@@ -36,19 +36,6 @@ const useStyles = makeStyles((theme) => ({
   contentValue: {
     padding: '16px 0'
   },
-  green: {
-    background: '#0e7d0e'
-  },
-  red: {
-    background: '#ef3919ed'
-  },
-  blue: {
-    background: '#3021e8'
-  },
-  tagContainer: {
-    fontWeight: '700',
-    paddingTop: '16px'
-  }
 }));
 
 export default function Cards({ cardData, onCardClick }) {
