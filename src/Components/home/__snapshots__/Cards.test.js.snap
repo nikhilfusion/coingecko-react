@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-card-7 MuiPaper-elevation1 MuiPaper-rounded"
+  onClick={[Function]}
+>
+  <div
+    className="MuiCardMedia-root makeStyles-cardMedia-8"
+    style={
+      Object {
+        "backgroundImage": "url(\\"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579\\")",
+      }
+    }
+    title="bitcoin"
+  />
+  <div
+    className="MuiCardContent-root makeStyles-cardContent-9"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom MuiTypography-alignCenter"
+    >
+      Bitcoin
+    </h2>
+    <div
+      className="MuiGrid-root makeStyles-contentMain-10 MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-root makeStyles-contentHeading-11 MuiGrid-item MuiGrid-grid-xs-8"
+      >
+        Symbol
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentValue-12 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        btc
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentHeading-11 MuiGrid-item MuiGrid-grid-xs-8"
+      >
+        Current Price
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentValue-12 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        29173
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentHeading-11 MuiGrid-item MuiGrid-grid-xs-8"
+      >
+        Lowest 24hr Price
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentValue-12 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        29005
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentHeading-11 MuiGrid-item MuiGrid-grid-xs-8"
+      >
+        Highest 24hr Price
+      </div>
+      <div
+        className="MuiGrid-root makeStyles-contentValue-12 MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        30759
+      </div>
+    </div>
+  </div>
+</div>
+`;

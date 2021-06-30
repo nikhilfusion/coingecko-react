@@ -45,11 +45,13 @@ export default function CoinDetails() {
   }, [])
   // fetching coin details api
   async function getCoinDetails() {
-    try {
-      const result = await axios.get(`${BASE_URL}/coins/${coinId}`)
-      setCoinData(result?.data);
-    } catch (err) {
-      console.log("err is ", err);
+    if (coinId) {
+      try {
+        const result = await axios.get(`${BASE_URL}/coins/${coinId}`)
+        setCoinData(result?.data);
+      } catch (err) {
+        console.log("err is ", err);
+      }
     }
   }
 
